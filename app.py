@@ -4,6 +4,8 @@ from forms import SearchItem, UploadItem
 from models import db, Accessories, Bags, Dresses, Footwears, Skirts, Tops, Trousers
 from helper import get_items, upload_items
 
+app = app
+
 
 @app.route('/', methods=["GET"])
 @app.route('/home', methods=["GET"])
