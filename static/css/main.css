@@ -473,7 +473,9 @@ Store Page Rulesets
     font-size: 1.5rem;
 }
 
-.upload-form input[type="text"] {
+.upload-form textarea,
+.upload-form input[type="text"],
+.upload-form input[type="number"] {
     flex-grow: 1;
     border-radius: 0.5rem;
     font-family: "Delius Swash Caps", Helvetica, sans-serif;
@@ -484,14 +486,14 @@ Store Page Rulesets
     padding: 0.5rem;
 }
 
-.upload-form textarea {
+/* .upload-form textarea {
     background-color: rgb(38, 166, 154);
     color: rgb(255, 255, 255);
     border-radius: 0.5rem;
     font-family: "Delius Swash Caps", Helvetica, sans-serif;
     font-size: 1rem;
     padding: 0.5rem;
-}
+} */
 
 .upload-form input[type="submit"] {
     background-color: rgb(197, 111, 30);

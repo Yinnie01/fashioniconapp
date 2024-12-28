@@ -44,12 +44,12 @@ def upload():
         upload_designer = upload_item.designer.data.lower()
         upload_colour = upload_item.colour.data.lower()
         upload_description = upload_item.description.data.lower()
-        upload_price = upload_item.price.data.lower()
+        upload_price = upload_item.price.data
 
         upload_items(upload_category, upload_type, upload_designer,
                      upload_colour, upload_description, upload_price)
 
-        return redirect(url_for('upload'))
+        return redirect(url_for('store'))
     return render_template('upload.html', template_upload=upload_item)
 
 
@@ -65,11 +65,3 @@ if __name__ == "__main__":
 # to create a virtual environment run:
 # python3 -m venv <name_of_environment>
 # <name_of_env>\Scripts\activate
-
-# app = Flask(__name__)
-
-# db = SQLAlchemy(app)
-
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///C:/Users/Yinnie/Desktop/SOFTWARE DEVELOPMENT/CODECADEMY/Learn Flask/clothing recommendation project/app/clothing_store.db'
-
-# app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
