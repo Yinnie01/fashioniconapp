@@ -47,7 +47,7 @@
                 <section class="details">
                     <h2 class="name">{{ item.type | title }} by {{ item.designer | title }}.</h2>
                     <p class="description">{{ item.description | capitalize }} in {{ item.colour }}</p>
-                    <p class="price">Price: ${{ item.price }}</p>
+                    <p class="price">Price: ${{ "%.2f"|format(item.price) }}</p>
                 </section>
             </article>
             {% endfor %}
