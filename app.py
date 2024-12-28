@@ -44,7 +44,7 @@ def upload():
         upload_designer = upload_item.designer.data.lower()
         upload_colour = upload_item.colour.data.lower()
         upload_description = upload_item.description.data.lower()
-        upload_price = upload_item.price.data
+        upload_price = round(upload_item.price.data, 1)
 
         upload_items(upload_category, upload_type, upload_designer,
                      upload_colour, upload_description, upload_price)
