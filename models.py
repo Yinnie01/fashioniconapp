@@ -4,6 +4,10 @@ from sqlalchemy.orm import sessionmaker
 
 from app_setup import db
 
+# engine = create_engine("sqlite://")
+# Session = sessionmaker(bind=engine)
+# session = Session()
+
 
 class Accessories(db.Model):
     id = db.Column(db.Integer, primary_key=True, nullable=False)
