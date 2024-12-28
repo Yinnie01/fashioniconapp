@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The home page of the musical store">
+    <meta name="description" content="FashionIcon: Your one-stop shop for every style in every size!">
     <title>FashionIcon</title>
     <link rel="icon" type="image/x-icon" href="../static/images/favicon.ico.jpg">
     <link rel="stylesheet" href="../static/css/reset.css">
@@ -46,7 +46,8 @@
                 <p>{{ template_upload.designer.label }} {{ template_upload.designer() }}</p>
                 <p>{{ template_upload.colour.label }} {{ template_upload.colour() }}</p>
                 <p>{{ template_upload.description.label }} {{ template_upload.description() }}</p>
-                <p>{{ template_upload.price.label }} {{ template_upload.price() }}</p>
+                <p>{{ template_upload.price.label }} <input type="number" step="0.01"
+                        name="{{ template_upload.price.name }}" value="{{ template_upload.price.value }}"></p>
                 <p>{{ template_upload.submit() }}</p>
             </form>
         </section>
